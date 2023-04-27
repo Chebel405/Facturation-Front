@@ -17,7 +17,8 @@ export class FactureComponent implements OnInit {
   }
 
   getFactures(): void {
-    this.factureService.getFactures() // Appel de la méthode getFactures() du service FactureService
-      .subscribe(factures => this.factures = factures); // Souscription à l'observable renvoyé par la méthode, puis mise à jour du tableau de factures avec les données reçues
+    this.factureService.getFactures().subscribe(factures => {
+    this.factures = factures; // Souscription à l'observable renvoyé par la méthode, puis mise à jour du tableau de factures avec les données reçues
+    });
   }
 }

@@ -8,7 +8,7 @@ import { Facture } from '../models/facture';
 })
 export class FactureService {
  // private apiUrl = 'https://jsonplaceholder.typicode.com/users'; // URL de l'API
- private apiUrl = 'http://localhost:8081'
+ private apiUrl = 'http://localhost:8081/factures'
 
   constructor(private http: HttpClient) { } // Injection du service HttpClient
 

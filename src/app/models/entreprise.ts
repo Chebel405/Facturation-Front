@@ -1,12 +1,13 @@
 // J'AI AJOUTE TOUT LES ATTRIBUTS DU BACK DE LA TABLE ENTREPRISE
-//J AI retiré NOM et FONCTION qui sont dans la table UTILISATEUR
+// J AI retiré NOM et FONCTION qui sont dans la table UTILISATEUR
+import { Facture } from "./facture";
+
 
 export class Entreprise {
     siret: number; // identifiant unique de l'entreprise
     siren: String; // numéro SIREN de l'entreprise
     ape: String
     numeroTva: String; // numéro de TVA intracommunautaire
-   // nom: String; // nom de l'entreprise
     adresse: String; // adresse de l'entreprise
     codePostal: String; // code postal de l'adresse de l'entreprise
     commune: String; // ville de l'adresse de l'entreprise
@@ -16,10 +17,10 @@ export class Entreprise {
     rcs: String;
     cfe: String;
     codeActivite: String;
- //   fonction: String; // fonction du contact dans l'entreprise
     mail: String; // adresse email du contact
     site: String; // site web de l'entreprise
     note: String;
+  //  factures: Facture[];
   
     constructor(
       siret: number,
@@ -37,7 +38,8 @@ export class Entreprise {
       codeActivite: String,
       mail: String,
       site: String,
-      note: String
+      note: String,
+   //   factures: Facture[]
     ) {
       this.siret = siret;
       this.siren = siren;
@@ -55,6 +57,7 @@ export class Entreprise {
       this.mail = mail;
       this.site = site;
       this.note = note;
+  //    this.factures = factures;
     }
   }
   

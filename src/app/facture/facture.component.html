@@ -18,24 +18,97 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Provisoires</th>
-      <th>Date</th>
-      <th>Montant</th>
-      <th>Description</th>
+      <th>N° Facture</th>
+      <th>Status</th>
+      <th>dateDeCreation</th>
+      <th>dateDeModification</th>
+      <th>datePdf</th>
+      <th>dateDeFinalisation</th>
+      <th>dateEnvoi</th>
+      <th>dateRelance</th>
+      <th>datePaiement</th>
+      <th>emetteurNom</th>
+      <th>emetteurSociete</th>
+      <th>emetteurSiren</th>
+      <th>emetteurSiret</th>
+      <th>emetteurCodeActivite</th>
+      <th>emetteurCodeApe</th>
+      <th>emetteurCodeTva</th>
+      <th>emetteurAdresse</th>
+      <th>emetteurTelephone</th>
+      <th>emetteurMail</th>
+      <th>destinationNom</th>
+      <th>destinationSociete</th>
+      <th>destinationSiren</th>
+      <th>destinationCodeActivite</th>
+      <th>destinationCodeApe</th>
+      <th>destinationCodeTva</th>
+      <th>destinataireAdresse</th>
+      <th>destinataireTelephone</th>
+      <th>destinataireMail</th>
+      <th>documentLie</th>
+      <th>tvaTexteDefault</th>
+      <th>conditionDePaiement</th>
+      <th>modeDePaiement</th>
+      <th>interetDeRetard</th>
+      <th>compteBancaire</th>
+      <th>ligneDetail</th>
+      <th>tva0TexteDefault</th>
+      <th>interetDeRetardTexteDefault</th>
+      <th>assuranceProTexteDefault</th>
+      <th>servicesTexteDefault</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let facture of factures">
-        <td>{{ facture.name }}</td>
-        <td>{{ facture.zipcode }}</td>
-        <td>{{ facture.email }}</td>
-        <td>{{ facture.website }}</td>
+        <td>{{ facture.numeroDeFacture}}</td>
+        <td>{{ facture.statut }}</td>
+        <td>{{ facture.dateDeCreation }}</td>
+        <td>{{ facture.dateDeModification }}</td>
+        <td>{{ facture.datePdf}}</td>
+        <td>{{ facture.dateDeFinalisation }}</td>
+        <td>{{ facture.dateEnvoi}}</td>
+        <td>{{ facture.dateRelance }}</td>
+        <td>{{ facture.datePaiement }}</td>
+        <td>{{ facture.emetteurNom }}</td>
+        <td>{{ facture.emetteurSociete }}</td>
+        <td>{{ facture.emetteurSiren }}</td>
+        <td>{{ facture.emetteurSiret}}</td>
+        <td>{{ facture.emetteurCodeActivite }}</td>
+        <td>{{ facture.emetteurCodeApe }}</td>
+        <td>{{ facture.emetteurCodeTva }}</td>
+        <td>{{ facture.emetteurAdresse}}</td>
+        <td>{{ facture.emetteurTelephone }}</td>
+        <td>{{ facture.emetteurMail }}</td>
+        <td>{{ facture.destinationNom }}</td>
+        <td>{{ facture.destinationSociete}}</td>
+        <td>{{ facture.destinationSiren }}</td>
+        <td>{{ facture.destinationCodeActivite }}</td>
+        <td>{{ facture.destinationCodeApe}}</td>
+        <td>{{ facture.destinationCodeTva}}</td>
+        <td>{{ facture.destinataireAdresse }}</td>
+        <td>{{ facture.destinataireTelephone }}</td>
+        <td>{{ facture.destinataireMail }}</td>
+        <td>{{ facture.documentLie}}</td>
+        <td>{{ facture.tvaTexteDefault }}</td>
+        <td>{{ facture.conditionDePaiement }}</td>
+        <td>{{ facture.modeDePaiement }}</td>
+        <td>{{ facture.interetDeRetard}}</td>
+        <td>{{ facture.compteBancaire }}</td>
+        <td>{{ facture.ligneDetail }}</td>
+        <td>{{ facture.tva0TexteDefault }}</td>
+        <td>{{ facture.interetDeRetardTexteDefault}}</td>
+        <td>{{ facture.assuranceProTexteDefault }}</td>
+        <td>{{ facture.servicesTexteDefault }}</td>
+        
+
     </tr>
   </tbody>
 </table>
 
 
-<table class="table">
+<!-- <table class="table">
   <thead>
     <tr>
       <th>Finalisées</th>
@@ -90,4 +163,4 @@
         <td>{{ facture.website }}</td>
     </tr>
   </tbody>
-</table>
+</table> -->
