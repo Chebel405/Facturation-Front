@@ -1,0 +1,165 @@
+<header class="barre-violette">
+    <h1>Entreprise</h1>
+  </header>
+  
+  
+  <div class="button-container">
+    <button class="button button-all">Toutes</button>
+    <button class="button button-finalized">Finalisées</button>
+    <button class="button button-provisional">Provisoires</button>
+    <button class="button button-paid">Payées</button>
+    <button class="button button-to-pay">À payer</button>
+  </div>
+  
+ <!--J'AI MODIFIE CE QUI EST EN COMMENTAIRE
+J AI UNIQUEMMENT RECUPERE CE QUE TU AVAIS MIS POUR CLIENT ET AJOUTE ENTREPRISE à la place de CLIENT
+ET AJOUTE LES ATTRIBUTS DU BACK ;) --> 
+  
+  <!-- <table class="table">
+    <thead>
+      <tr>
+        <th>Provisoires</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entreprise of entreprises">
+          <td>{{ entreprise.id }}</td>
+          <td>{{ entreprise.siren }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+          <td>{{ entreprise. }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Finalisées</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entreprise of entreprises">
+          <td>{{ entreprise.name }}</td>
+          <td>{{ entreprise.zipcode }}</td>
+          <td>{{ entreprise.email }}</td>
+          <td>{{ entreprise.website }}</td>
+      </tr>
+    </tbody>
+  </table> 
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Payées</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entreprise of entreprises">
+          <td>{{ entreprise.name }}</td>
+          <td>{{ entreprise.zipcode }}</td>
+          <td>{{ entreprise.email }}</td>
+          <td>{{ entreprise.website }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>A Payer</th>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entreprise of entreprises">
+          <td>{{ entreprise.name }}</td>
+          <td>{{ entreprise.zipcode }}</td>
+          <td>{{ entreprise.email }}</td>
+          <td>{{ entreprise.website }}</td>
+      </tr>
+    </tbody>
+  </table> 
+-->
+
+  <h2>Liste des entreprises</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Siret</th>
+        <th>siren</th>
+        <th>ape</th>
+        <th>numeroTva</th>
+        <th>adresse</th>
+        <th>codePostal</th>
+        <th>commune</th>
+        <th>portable</th>
+        <th>raisonSocial</th>
+        <th>siege</th>
+        <th>rcs</th>
+        <th>cfe</th>
+        <th>codeActivite</th>
+        <th>mail</th>
+        <th>site</th>
+        <th>note</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entreprise of entreprises">
+        <td>{{ entreprise.siret}}</td>
+        <td>{{ entreprise.siren }}</td>
+        <td>{{ entreprise.ape }}</td>
+        <td>{{ entreprise.numeroTva }}</td>
+        <td>{{ entreprise.adresse}}</td>
+        <td>{{ entreprise.codePostal }}</td>
+        <td>{{ entreprise.commune }}</td>
+        <td>{{ entreprise.portable }}</td>
+        <td>{{ entreprise.raisonSocial}}</td>
+        <td>{{ entreprise.siege }}</td>
+        <td>{{ entreprise.rcs }}</td>
+        <td>{{ entreprise.cfe }}</td>
+        <td>{{ entreprise.codeActivite}}</td>
+        <td>{{ entreprise.mail }}</td>
+        <td>{{ entreprise.site }}</td>
+        <td>{{ entreprise.note }}</td>
+        
+          <button>Modifier</button>
+          <button>Supprimer</button>
+       
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  
+
+    
+  

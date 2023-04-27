@@ -1,0 +1,71 @@
+/* Style pour la barre violette */
+.barre-violette {
+  background-color: #7F7CAF;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style pour le titre CLIENT */
+.clients {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Style pour le tableau principal */
+.tableau-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-left: 20px; /* Ajout d'une marge de 20px à gauche */
+}
+
+.mini-tableau {
+  flex-grow: 1;
+  margin-right: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Style pour le titre de chaque colonne */
+th {
+  text-align: left;
+}
+
+/* Style pour les boutons Modifier et Supprimer */
+button {
+  padding: 5px 10px;
+  background-color: #7F7CAF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #483D8B;
+}
+
+/* Style pour les boutons Modifier et Supprimer dans les mini-tableaux */
+button.modifier {
+  margin-right: 10px;
+}
+
+button.supprimer {
+  margin-right: 5px;
+}
+
+/* Positionnement des boutons Modifier et Supprimer */
+.boutons-modifier-supprimer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

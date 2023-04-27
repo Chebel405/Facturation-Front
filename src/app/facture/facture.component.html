@@ -1,1 +1,93 @@
-<p>facture works!</p>
+
+
+<header class="barre-violette">
+  <h1>Facture</h1>
+</header>
+
+
+<div class="button-container">
+  <button class="button button-all">Toutes</button>
+  <button class="button button-finalized">Finalisées</button>
+  <button class="button button-provisional">Provisoires</button>
+  <button class="button button-paid">Payées</button>
+  <button class="button button-to-pay">À payer</button>
+</div>
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Provisoires</th>
+      <th>Date</th>
+      <th>Montant</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let facture of factures">
+        <td>{{ facture.name }}</td>
+        <td>{{ facture.zipcode }}</td>
+        <td>{{ facture.email }}</td>
+        <td>{{ facture.website }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Finalisées</th>
+      <th>Date</th>
+      <th>Montant</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let facture of factures">
+        <td>{{ facture.name }}</td>
+        <td>{{ facture.zipcode }}</td>
+        <td>{{ facture.email }}</td>
+        <td>{{ facture.website }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Payées</th>
+      <th>Date</th>
+      <th>Montant</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let facture of factures">
+        <td>{{ facture.name }}</td>
+        <td>{{ facture.zipcode }}</td>
+        <td>{{ facture.email }}</td>
+        <td>{{ facture.website }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>A Payer</th>
+      <th>Date</th>
+      <th>Montant</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let facture of factures">
+        <td>{{ facture.name }}</td>
+        <td>{{ facture.zipcode }}</td>
+        <td>{{ facture.email }}</td>
+        <td>{{ facture.website }}</td>
+    </tr>
+  </tbody>
+</table>
