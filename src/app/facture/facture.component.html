@@ -20,18 +20,18 @@
     <tr>
       <th>N° Facture</th>
       <th>Status</th>
-      <th>dateDeCreation</th>
+      <!-- <th>dateDeCreation</th>
       <th>dateDeModification</th>
       <th>datePdf</th>
       <th>dateDeFinalisation</th>
       <th>dateEnvoi</th>
       <th>dateRelance</th>
-      <th>datePaiement</th>
+      <th>datePaiement</th> -->
       <th>emetteurNom</th>
       <th>emetteurSociete</th>
       <th>emetteurSiren</th>
       <th>emetteurSiret</th>
-      <th>emetteurCodeActivite</th>
+      <!-- <th>emetteurCodeActivite</th>
       <th>emetteurCodeApe</th>
       <th>emetteurCodeTva</th>
       <th>emetteurAdresse</th>
@@ -56,26 +56,26 @@
       <th>tva0TexteDefault</th>
       <th>interetDeRetardTexteDefault</th>
       <th>assuranceProTexteDefault</th>
-      <th>servicesTexteDefault</th>
-      <th></th>
+      <th>servicesTexteDefault</th> -->
+      <!-- <th></th> -->
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let facture of factures">
         <td>{{ facture.numeroDeFacture}}</td>
         <td>{{ facture.statut }}</td>
-        <td>{{ facture.dateDeCreation }}</td>
+        <!-- <td>{{ facture.dateDeCreation }}</td>
         <td>{{ facture.dateDeModification }}</td>
         <td>{{ facture.datePdf}}</td>
         <td>{{ facture.dateDeFinalisation }}</td>
         <td>{{ facture.dateEnvoi}}</td>
         <td>{{ facture.dateRelance }}</td>
-        <td>{{ facture.datePaiement }}</td>
+        <td>{{ facture.datePaiement }}</td> -->
         <td>{{ facture.emetteurNom }}</td>
         <td>{{ facture.emetteurSociete }}</td>
         <td>{{ facture.emetteurSiren }}</td>
         <td>{{ facture.emetteurSiret}}</td>
-        <td>{{ facture.emetteurCodeActivite }}</td>
+        <!-- <td>{{ facture.emetteurCodeActivite }}</td>
         <td>{{ facture.emetteurCodeApe }}</td>
         <td>{{ facture.emetteurCodeTva }}</td>
         <td>{{ facture.emetteurAdresse}}</td>
@@ -101,66 +101,8 @@
         <td>{{ facture.interetDeRetardTexteDefault}}</td>
         <td>{{ facture.assuranceProTexteDefault }}</td>
         <td>{{ facture.servicesTexteDefault }}</td>
-        
+         -->
 
     </tr>
   </tbody>
 </table>
-
-
-<!-- <table class="table">
-  <thead>
-    <tr>
-      <th>Finalisées</th>
-      <th>Date</th>
-      <th>Montant</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let facture of factures">
-        <td>{{ facture.name }}</td>
-        <td>{{ facture.zipcode }}</td>
-        <td>{{ facture.email }}</td>
-        <td>{{ facture.website }}</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Payées</th>
-      <th>Date</th>
-      <th>Montant</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let facture of factures">
-        <td>{{ facture.name }}</td>
-        <td>{{ facture.zipcode }}</td>
-        <td>{{ facture.email }}</td>
-        <td>{{ facture.website }}</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>A Payer</th>
-      <th>Date</th>
-      <th>Montant</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let facture of factures">
-        <td>{{ facture.name }}</td>
-        <td>{{ facture.zipcode }}</td>
-        <td>{{ facture.email }}</td>
-        <td>{{ facture.website }}</td>
-    </tr>
-  </tbody>
-</table> -->

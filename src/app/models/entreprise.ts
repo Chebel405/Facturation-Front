@@ -18,8 +18,8 @@ export class Entreprise {
     cfe: String;
     codeActivite: String;
     mail: String; // adresse email du contact
-    site: String; // site web de l'entreprise
-    note: String;
+  //  site: String; // site web de l'entreprise
+  //  note: String;
   //  factures: Facture[];
   
     constructor(
@@ -37,8 +37,8 @@ export class Entreprise {
       cfe: String,
       codeActivite: String,
       mail: String,
-      site: String,
-      note: String,
+      // site: String,
+      // note: String,
    //   factures: Facture[]
     ) {
       this.siret = siret;
@@ -55,8 +55,8 @@ export class Entreprise {
       this.cfe = cfe;
       this.codeActivite = codeActivite;
       this.mail = mail;
-      this.site = site;
-      this.note = note;
+      // this.site = site;
+      // this.note = note;
   //    this.factures = factures;
     }
   }
