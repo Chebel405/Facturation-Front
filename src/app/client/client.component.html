@@ -1,272 +1,143 @@
 <header class="barre-violette">
   <h1 class="clients">CLIENT</h1>
+  
+  <button (click)="showForm()">Ajouter client</button>
+  <div *ngIf="showAddForm">
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom">
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom">
+
+      <label for="email">E-mail :</label>
+      <input type="email" id="email">
+
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+  
 </header>
 
 <div class="tableau-container">
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[0].name }}</td>
-          <td>{{ clients[0].username }}</td>
-          <td>{{ clients[0].email }}</td>
-          <td>{{ clients[0].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
+  <ng-container *ngFor="let client of clients; let i = index">
+    <div class="mini-tableau" *ngIf="i < 9">
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>fonction</th>
+            <th>role</th>
+            <!-- <th>portable</th>
+            <th>mail</th>
+            <th>societe</th>
+            <th>codeActivite</th>
+            <th>adresse</th>
+            <th>codePostal</th>
+            <th>ville</th>
+            <th>note</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ client.id }}</td>
+            <td>{{ client.nom }}</td>
+            <td>{{ client.prenom }}</td>
+            <td>{{ client.fonction }}</td>
+            <td>{{ client.role }}</td>
+            <!-- <td>{{ client.portable }}</td>
+            <td>{{ client.mail }}</td>
+            <td>{{ client.societe }}</td>
+            <td>{{ client.codeActivite }}</td>
+            <td>{{ client.adresse }}</td>
+            <td>{{ client.codePostal }}</td>
+            <td>{{ client.ville }}</td>
+            <td>{{ client.note }}</td> -->
 
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[2].name }}</td>
-          <td>{{ clients[2].username }}</td>
-          <td>{{ clients[2].email }}</td>
-          <td>{{ clients[2].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
+            
+          </tr>
+        </tbody>
+      </table>
+      <div class="boutons">
+        <button class="modifier">Modifier</button>
+        <button class="supprimer">Supprimer</button>
+      </div>
     </div>
-  </div>
-
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[1].name }}</td>
-          <td>{{ clients[1].username }}</td>
-          <td>{{ clients[1].email }}</td>
-          <td>{{ clients[1].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
+  </ng-container>
 </div>
 
-<div class="tableau-container">
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[0].name }}</td>
-          <td>{{ clients[0].username }}</td>
-          <td>{{ clients[0].email }}</td>
-          <td>{{ clients[0].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
 
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[2].name }}</td>
-          <td>{{ clients[2].username }}</td>
-          <td>{{ clients[2].email }}</td>
-          <td>{{ clients[2].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
 
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[1].name }}</td>
-          <td>{{ clients[1].username }}</td>
-          <td>{{ clients[1].email }}</td>
-          <td>{{ clients[1].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<header class="barre-violette">
+<h1 class="clients">CLIENT</h1>
+<button (click)="showForm()">Ajouter client</button>
+<div *ngIf="showAddForm">
+<form>
+  <label for="nom">Nom :</label>
+  <input type="text" id="nom">
+  <label for="prenom">Prénom :</label>
+  <input type="text" id="prenom">
+  <label for="email">E-mail :</label>
+  <input type="email" id="email">
+  <button type="submit">Ajouter</button>
+ </form>
 </div>
+
+</header>
+
+
 
 
 <div class="tableau-container">
-  <div class="mini-tableau">
-    <table>
-      <thead>
+<ng-container *ngFor="let client of clients; let i = index">
+  <div class="mini-tableau" *ngIf="i < 9">
+  <table>
+    <thead>
         <tr>
           <th>Nom</th>
           <th>Prénom</th>
           <th>Email</th>
           <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[0].name }}</td>
-          <td>{{ clients[0].username }}</td>
-          <td>{{ clients[0].email }}</td>
-          <td>{{ clients[0].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
+ <th></th>
+ <th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{{ client.name }}</td>
+<td>{{ client.username }}</td>
+ <td>{{ client.email }}</td>
+<td>{{ client.website }}</td>
+</tr>
+</tbody>
+</table>
+<div class="boutons">
+<button class="modifier">Modifier</button>
+<button class="supprimer">Supprimer</button>
+</div>
+</div>
+</ng-container>
 
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[2].name }}</td>
-          <td>{{ clients[2].username }}</td>
-          <td>{{ clients[2].email }}</td>
-          <td>{{ clients[2].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
-
-  <div class="mini-tableau">
-    <table>
-      <thead>
-        <tr>
-          <th>Nom</th>
-          <th>Prénom</th>
-          <th>Email</th>
-          <th>Site</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{ clients[1].name }}</td>
-          <td>{{ clients[1].username }}</td>
-          <td>{{ clients[1].email }}</td>
-          <td>{{ clients[1].website }}</td>
-          <td><button class="modifier">Modifier</button></td>
-          <td><button class="supprimer">Supprimer</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="boutons">
-      <button class="modifier">Modifier</button>
-      <button class="supprimer">Supprimer</button>
-    </div>
-  </div>
 </div>
 
+
+
+
+ -->

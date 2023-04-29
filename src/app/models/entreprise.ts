@@ -7,7 +7,7 @@ export class Entreprise {
     siret: number; // identifiant unique de l'entreprise
     siren: String; // numéro SIREN de l'entreprise
     ape: String
-    numeroTva: String; // numéro de TVA intracommunautaire
+  //  numeroTva: String; // numéro de TVA intracommunautaire
     adresse: String; // adresse de l'entreprise
     codePostal: String; // code postal de l'adresse de l'entreprise
     commune: String; // ville de l'adresse de l'entreprise
@@ -26,7 +26,7 @@ export class Entreprise {
       siret: number,
       siren: String,
       ape: String,
-      numeroTva: String,
+    //  numeroTva: String,
       adresse: String,
       codePostal: String,
       commune: String,
@@ -39,12 +39,12 @@ export class Entreprise {
       mail: String,
       // site: String,
       // note: String,
-   //   factures: Facture[]
+      //   factures: Facture[]
     ) {
       this.siret = siret;
       this.siren = siren;
       this.ape = ape;
-      this.numeroTva = numeroTva;
+    //  this.numeroTva = numeroTva;
       this.adresse = adresse;
       this.codePostal = codePostal;
       this.commune = commune;

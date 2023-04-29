@@ -7,9 +7,11 @@ import { Client } from 'src/app/models/client'; // Importation de la classe Clie
   providedIn: 'root' // Spécifie que le service sera injecté au niveau de la racine de l'application
 })
 export class ClientService {
+// ajouterClient(newClient: Client) {
+//  throw new Error('Method not implemented');
+//}
 
- // private apiURL = 'https://jsonplaceholder.typicode.com/users'; // URL de l'API
-  private apiURL = 'http://localhost:8081'
+  private apiURL = 'http://localhost:8081/utilisateurs'
 
 
   constructor(private http: HttpClient) { } // Injection du module HttpClient dans le constructeur du service

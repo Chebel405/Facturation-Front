@@ -7,7 +7,7 @@ import { EntrepriseComponent } from './entreprise/entreprise.component'; // Impo
 
 const routes: Routes = [
   // La route pour afficher la liste des clients
-  { path: 'clients', component: ClientComponent },
+  { path: 'utilisateurs', component: ClientComponent },
   // La route pour afficher la liste des factures
   { path: 'factures', component: FactureComponent },
   // La route pour afficher les paramètres

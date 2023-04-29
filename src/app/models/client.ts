@@ -1,16 +1,47 @@
 export class Client {
-    name: string;
-    username: string;
+    id: string;
+    nom: string;
+    prenom: string;
     fonction: string;
-    email: string;
-    website: string;
+    role: string;
+    // portable: string;
+    // mail: string;
+    // societe: string;
+    // codeActivite: string;
+    // adresse: string;
+    // codePostal: string;
+    // ville: string;
+    // note: string;
   
-    constructor(nom: string, prenom: string, fonction: string, email:string, website:string ) {
-      this.name = nom;
-      this.username = prenom;
-      this.fonction = fonction;
-      this.email= email;
-      this.website= website;
+    constructor(
+      id: string,
+      nom: string,
+      prenom: string,
+      fonction: string,
+      role: string,
+      // portable:string,
+      // mail: string,
+      // societe:string,
+      // codeActivite: string,
+      // adresse:string,
+      // codePostal: string,
+      // ville:string,
+      // note:string
+       ) {
+      this.id = id;
+      this.nom = nom;
+      this.prenom = prenom;
+      this.fonction=fonction ;
+      this.role=role ;
+      // this.portable =portable ;
+      // this.mail = mail;
+      // this.societe =societe ;
+      // this.codeActivite=codeActivite ;
+      // this.adresse=adresse ;
+      // this.codePostal =codePostal ;
+      // this.ville =ville ;
+      // this.note =note ;
+
     }
   }
   

@@ -8,8 +8,10 @@ import { Entreprise } from 'src/app/models/entreprise';
 })
 export class EntrepriseService {
 
- // private apiURL = 'https://jsonplaceholder.typicode.com/entreprises';
- private apiURL = 'http://localhost:8081/entreprises' // J'ai juste ajouté 'entreprises' (si tu vas sur la page EntrepriseController dans le back @RequestMapping("/entreprises") c'est pour ca )
+
+ private apiURL = 'http://localhost:8081/entreprises' // J'ai juste ajouté '/entreprises' 
+                                                      // (si tu vas sur la page EntrepriseController dans 
+                                                      // le back @RequestMapping("/entreprises") c'est pour ca )
 
   constructor(private http: HttpClient) { }
 
