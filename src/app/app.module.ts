@@ -15,8 +15,8 @@ import { EntrepriseComponent } from './entreprise/entreprise.component';
 @NgModule({
   declarations: [
    
-    AppComponent,
-    ClientComponent,
+   AppComponent,
+   ClientComponent,
    FactureComponent,
    ParametreComponent,
    EntrepriseComponent
